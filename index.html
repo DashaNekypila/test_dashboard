@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<aside class="sidebar">
+    <div class="logo"> 
+        <img src="data:image/png;base64,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" alt="Error" class="logo_img"/>
+        <div class="logo_text"> Dashboard<sub class="logo_text-small">v.01</sub></div>
+
+    </div>
+    <nav class="menu">
+        <div class="menu_item ">
+            <img src="https://cdn.icon-icons.com/icons2/1524/PNG/512/lightbulb_106441.png" alt="#" class="menu_item-img"/>  
+            <a href="#" class="menu_item-text">Dashboard</a>
+            <img src="https://cdn-icons-png.flaticon.com/512/43/43478.png" alt="#" class="menu_item-icon noicon"/> 
+        </div>
+        <div class="menu_item">
+            <img src="https://cdn-icons-png.flaticon.com/512/162/162614.png" alt="#" class="menu_item-img"/>  
+            <a href="#" class="menu_item-text">Product</a>
+            <img src="https://cdn-icons-png.flaticon.com/512/43/43478.png" alt="#" class="menu_item-icon"/> 
+        </div>
+        <div class="menu_item active">
+            <img src="https://cdn-icons-png.flaticon.com/512/4663/4663997.png" alt="#" class="menu_item-img"/>  
+            <a href="#" class="menu_item-text">Customers</a>
+            <img src="https://cdn-icons-png.flaticon.com/512/43/43478.png" alt="#" class="menu_item-icon"/> 
+        </div>
+        <div class="menu_item">
+            <img src="https://cdn-icons-png.flaticon.com/512/289/289108.png" alt="#" class="menu_item-img"/>  
+            <a href="#" class="menu_item-text">Income</a>
+            <img src="https://cdn-icons-png.flaticon.com/512/43/43478.png" alt="#" class="menu_item-icon"/> 
+        </div>
+        <div class="menu_item">
+            <img src="https://cdn-icons-png.flaticon.com/512/262/262042.png" alt="#" class="menu_item-img"/>  
+            <a href="#" class="menu_item-text">Promote</a>
+            <img src="https://cdn-icons-png.flaticon.com/512/43/43478.png" alt="#" class="menu_item-icon"/> 
+        </div>
+        <div class="menu_item">
+            <img src="https://cdn-icons-png.flaticon.com/512/219/219393.png" alt="#" class="menu_item-img"/>  
+            <a href="#" class="menu_item-text">Help</a>
+            <img src="https://cdn-icons-png.flaticon.com/512/43/43478.png" alt="#" class="menu_item-icon"/> 
+        </div>
+    </nav>
+    <div class="upgrade">
+        <div class="upgrade_text">Upgrade to PRO to get access all Features!</div>
+        <button class="upgrade_button">Get Pro Now!</button>
+    </div>
+    <div class="user">
+        <img src="https://cdn-icons-png.flaticon.com/512/3048/3048122.png" alt="User" class="user_img">
+        <div class="user_info">
+            <span class="user_info-name">Evano</span>
+            <p class="user_info-info">Project Manager</p>
+        </div>
+        <img src="https://cdn-icons-png.flaticon.com/512/54/54785.png" alt="#" class="user_icon"/>
+    </div>
+</aside>
+<main class="content">
+    <header class="header">
+        <h1>Hello Evano 👋,</h1>
+        <div class="search">
+            <span class="search-icon"><img src="data:image/png;base64,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" alt="" class="search-icon icon"></span> 
+            <input type="text" placeholder="Search" class="search-input">
+        </div>
+    </header>
+    <section class="cards">
+        <div class="card">
+            <div class="card_item">
+                <img src="https://cdn-icons-png.flaticon.com/512/3171/3171593.png" alt="#" class="card_img"/>
+                <div class="card_info">
+                    <p class="card_info-text">Total Customers</p>
+                    <h2 class="card_info-number">5,423</h2>
+                    <span class="card_info-info green"><img src="data:image/png;base64,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" alt="#" class="card_info-info img"/> +16% <span class="card_info-info black">this month</span></span>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_item">
+                <img src="https://w7.pngwing.com/pngs/821/623/png-transparent-check-mark-computer-icons-avatar.png" alt="#" class="card_img"/>
+                <div class="card_info">
+                    <p class="card_info-text">Members</p>
+                    <h2 class="card_info-number">1,893</h2>
+                    <span class="card_info-info red"><img src="https://st.depositphotos.com/1764149/1445/i/450/depositphotos_14456705-stock-photo-red-arrow.jpg" alt="#" class="card_info-info img"/> -1% <span class="card_info-info black">this month</span></span>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_item">
+                <img src="https://cdn-icons-png.flaticon.com/512/61/61029.png" alt="#" class="card_img"/>
+                <div class="card_info">
+                    <p class="card_info-text">Active Now</p>
+                    <h2 class="card_info-number">189</h2>
+                    <div class="avatars">
+                        <img class="avatars_img" src="https://cdn-icons-png.flaticon.com/128/168/168911.png" alt="Avatar 1">
+                        <img class="avatars_img" src="https://cdn-icons-png.flaticon.com/128/168/168882.png" alt="Avatar 2">
+                        <img class="avatars_img" src="https://cdn-icons-png.flaticon.com/128/168/168909.png" alt="Avatar 3">
+                        <img class="avatars_img" src="https://cdn-icons-png.flaticon.com/128/168/168869.png" alt="Avatar 4">
+                        <img class="avatars_img" src="https://cdn-icons-png.flaticon.com/128/168/168889.png" alt="Avatar 5">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="customer_table">
+        <h2 class="customer_title">All Customers</h2>
+        <div class="table_filters">
+            <p class="table_filters-text">Active Members</p>
+            <div class="search">
+                <span class="search-icon"><img src="data:image/png;base64,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" alt="" class="search-icon icon"></span> 
+                <input type="text" placeholder="Search" class="search-input">
+            </div>
+            <div class="select">
+                <select class="select_text" >
+                    <option>Sort by: Newest</option>
+                </select>
+            </div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Customer Name</th>
+                    <th>Company</th>
+                    <th>Phone Number</th>
+                    <th>Email</th>
+                    <th>Country</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jane Cooper</td>
+                    <td>Microsoft</td>
+                    <td>(225) 555-0118</td>
+                    <td>jane@microsoft.com</td>
+                    <td>United States</td>
+                    <td class="status active"><button>Active</button></td>
+                </tr>
+                <tr>
+                    <td>Floyd Miles</td>
+                    <td>Yahoo</td>
+                    <td>(205) 555-0100</td>
+                    <td>floyd@yahoo.com</td>
+                    <td>Kiribati</td>
+                    <td class="status inactive"><button>Inactive</button></td>
+                </tr>
+                <tr>
+                    <td>Ronald</td>
+                    <td>Adobe</td>
+                    <td>(302) 555-0107</td>
+                    <td>ronald@adobe.com</td>
+                    <td>Israel</td>
+                    <td class="status inactive"><button>Inactive</button></td>
+                </tr>
+                <tr>
+                    <td>Marvin McKinney</td>
+                    <td>Tesla</td>
+                    <td>(252) 555-0126</td>
+                    <td>mrvin@tesla.com</td>
+                    <td>Iran</td>
+                    <td class="status active"><button>Active</button></td>
+                </tr>
+                <tr>
+                    <td>Jerome Bell</td>
+                    <td>Google</td>
+                    <td>(629) 555-0129</td>
+                    <td>jerome@google.com</td>
+                    <td>Reunion</td>
+                    <td class="status active"><button>Active</button></td>
+                </tr>
+                <tr>
+                    <td>Kathryn Murphy</td>
+                    <td>Microsoft</td>
+                    <td>(406) 555-0120</td>
+                    <td>kathryn@microsoft.com</td>
+                    <td>Curacao</td>
+                    <td class="status active"><button>Active</button></td>
+                </tr>
+                <tr>
+                    <td>Jacob Jones</td>
+                    <td>Yahoo</td>
+                    <td>(208) 555-0112</td>
+                    <td>jacob@yahoo.com</td>
+                    <td>Brazil</td>
+                    <td class="status active"><button>Active</button></td>
+                </tr>
+                <tr>
+                    <td>Kristin Watson</td>
+                    <td>Facebook</td>
+                    <td>(704) 555-0127</td>
+                    <td>kristin@facebook.com</td>
+                    <td>Aland Islands</td>
+                    <td class="status inactive"><button>Inactive</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section class="pagination">
+        <div class="pagination_info">
+            Showing data 1 to 8 of 256K entries
+        </div>
+        <div class="pagination_controls">
+            <button class="pagination_style">&lt;</button>
+            <button class="pagination_style active">1</button>
+            <button class="pagination_style">2</button>
+            <button class="pagination_style">3</button>
+            <button class="pagination_style">4</button>
+            <span class="pagination_dots">...</span>
+            <button class="pagination_style">40</button>
+            <button class="pagination_style">&gt;</button>
+        </div>
+    </section>
+</main>
+
+</body>
+</html>
